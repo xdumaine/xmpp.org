@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>XMPP</title><link href="/" rel="alternate"></link><link href="/feeds/kev.atom.xml" rel="self"></link><id>/</id><updated>2015-12-18T13:41:00+01:00</updated><entry><title>XMPP at the end of the Google Summer of Code 2015</title><link href="/2015/12/xmpp-at-the-end-of-the-google-summer-of-code-2015" rel="alternate"></link><updated>2015-12-18T13:41:00+01:00</updated><author><name>Kev</name></author><id>tag:,2015-12-18:2015/12/xmpp-at-the-end-of-the-google-summer-of-code-2015</id><summary type="html">&lt;p&gt;This year we had six students working on disparate projects for GSoC, and we're delighted that all of them were successful! Here we link to a wrapup blog post from each of the students, and a description of their work from their mentors.&lt;/p&gt;
+&lt;p&gt;We had Adhish Singh working on &lt;a href="http://www.xmpp-iot.org/gsoc/week-12/"&gt;Internet of Things implementations&lt;/a&gt;. His mentor, Joachim, said:&lt;/p&gt;
+&lt;blockquote&gt;Adhish Singla: [Prototyping tools for IoT](http://www.xmpp-iot.org/gsoc/)
+
+Adhish started from no XMPP experience and have created 2 graphical interfaces to IoT devices supporting xep 323 and xep 325 (experimental). One as a standalone Cordova mobile application and one as part of the converse.js webpage xmpp client. He also implemented a python history client that is instatiated as another resource on a Device IoT JID and polls the device for momentary values and stores history in db or local storage. So when clients ask for historical data it will in parallell with the originating device return the longtime history as part of the XEP323 history part. The javascript parts was done with crafted IQ messaging but will be enhanced with real plugin usage that is now part of the strophe package. python code will be submitted into SleekXMPP distribution. Converse code is running on the [site](http://www.xmpp-iot.org/).
+&lt;/blockquote&gt;
+
+&lt;p&gt;We had Andreas Straub working on &lt;a href="http://conversationsgsoc2015.blogspot.co.uk/2015/09/omemo.html"&gt;end to end encryption in the Conversations client&lt;/a&gt;. His mentor Daniel says:&lt;/p&gt;
+&lt;blockquote&gt;Andreas Straub: Implementing Axolotl over XMPP
+In just three month time Andreas managed to basically invent and implement a completely new protocol for multi-end to multi-end encryption. Compared to the commonly used OTR encryption which has  reliability problems in mobile- and multi client setups the new protocol works very well with multiple clients and offline messages while maintaining crypto features such as deniability and forward secrecy. Even after the Google Summer of Code was over Andreas stuck around and created an XEP based on the experienced gather during the implementation. It is currently in the inbox of the XSF and called 'OMEMO Encryption'. A new name was chosen to highlight the fact that - besides using axolotl internally - it is a completely new protocol and incompatible with other implementations that utilize axolotl.
+&lt;/blockquote&gt;
+
+&lt;p&gt;We had Daniel Baczynski working on &lt;a href="http://danielbgsoc.blogspot.co.uk/2015/08/polishing-and-fixing-existing-code.html"&gt;multi-account support in the Swift client&lt;/a&gt;. His mentor, Kev, says:&lt;/p&gt;
+&lt;blockquote&gt;Daniel had a tricky job this summer - to add support for using multiple accounts at once to the Swift client. Rather than being protocol-difficult, as some of the other projects, this one was tricky because of the pervasive nature of and difficult user experience changes needed in the project. Over the course of the summer he made significant progress towards multaccount support, and we hope to have the feature completed for a future release.&lt;/blockquote&gt;
+
+&lt;p&gt;We had Ishan Khanna working on serverless messaging in the Smack library. His mentor Florian says:&lt;/p&gt;
+&lt;blockquote&gt;Ishan Khanna, Add support for XMPP Serverless Messaging (XEP-174) to Smack
+
+From the very start Ishan was very motivated to add support for
+serverless messaging based on DNS-SD and mDNS as described in XEP-147 to
+Smack. While the problem description is trivial, the solution involves
+many protocols (XMPP, DNS-SD, mDNS, ...), concepts and technology stacks
+(Smack, jmdns, ...) that need to be understood in order to be able to
+implement XMPP serverless messaging. Ishan implemented a working
+solution and and demonstrated how other XMPP clients are able to
+discover and exchange messages with the smack serverless implementation.
+&lt;/blockquote&gt;
+
+&lt;p&gt;We had Marvin Wißfeld working on &lt;a href="http://mar-v-in.github.io/gsoc15/weekly-report/2015/08/21/thanks.html"&gt;DNSSEC support in the Smack library&lt;/a&gt;. His mentor Dave says:&lt;/p&gt;
+&lt;blockquote&gt;Marvin W: Adding DNSSEC Support to Smack via miniDNS
+
+A solid implementation of DNSSEC that can span everything from server to mobile would be an accomplishment from any developer - to get this done from scratch in a single summer as a student in GSoC really is amazingly impressive. XMPP relies on DNS for federated service discovery, both from client to server and between servers, and including DNSSEC in this capability gives a huge uplift in security across the board, providing cryptographically assured DNS lookups. Marvin implemented this in miniDNS, and added the needed support to Smack, so this can now be available on Android and desktop clients, and miniDNS can be used by servers as well.
+&lt;/blockquote&gt;
+
+&lt;p&gt;We had Tarun Gupta working on &lt;a href="http://tarun018.blogspot.co.uk/2015/08/wrap-up.html"&gt;extending the Stroke library with all the features from its Swiften sister-project&lt;/a&gt;. His mentor Kev said:&lt;/p&gt;
+&lt;blockquote&gt;Tarun took on a huge project this summer and achieved much more than I would have expected. His project to update Stroke with all the features available in the Swiften library was a great success, and has made Stroke much more useful for developers. Over the course of the summer Tarun touched nearly 600 files, and ported over 35,000 lines of code. A massive achievement.
+&lt;/blockquote&gt;
+
+&lt;p&gt;Thanks to all the students for their efforts over the summer, and good luck in their future endeavours (although we hope they'll stick around!).&lt;/p&gt;</summary></entry><entry><title>XSF GSoC Students 2015</title><link href="/2015/04/xsf-gsoc-students-2015" rel="alternate"></link><updated>2015-04-28T09:43:00+02:00</updated><author><name>kev</name></author><id>tag:,2015-04-28:2015/04/xsf-gsoc-students-2015</id><summary type="html">&lt;p&gt;This year, we've been lucky enough to have had many great applications to take part in Google Summer of Code under the XSF. We've selected the following six students/projects and are looking forward to working with them over an exciting summer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Tarun Gupta&lt;/em&gt;: &lt;a href="https://www.google-melange.com/gsoc/project/details/google/gsoc2015/tarun018/5741031244955648"&gt;Extend Stroke Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Daniel Baczynski&lt;/em&gt;: &lt;a href="https://www.google-melange.com/gsoc/project/details/google/gsoc2015/matrix4/5724160613416960"&gt;Multi-account support in Swift&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Ishan Khanna&lt;/em&gt;: &lt;a href="https://www.google-melange.com/gsoc/project/details/google/gsoc2015/ishan1604/5697982787747840"&gt;Add support for XMPP Serverless Messaging (XEP-174) to Smack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Marvin W&lt;/em&gt;: &lt;a href="https://www.google-melange.com/gsoc/project/details/google/gsoc2015/larma/5643440998055936"&gt;Add support for DNSSEC to Smack via MiniDNS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;srtb&lt;/em&gt;: &lt;a href="https://www.google-melange.com/gsoc/project/details/google/gsoc2015/strb/5750085036015616"&gt;Axolotl support for Conversations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Adhish Singla&lt;/em&gt;: &lt;a href="https://www.google-melange.com/gsoc/project/details/google/gsoc2015/adhish/5724160613416960"&gt;Prototyping tools, for Internet of Things&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This should be a great summer for the students, and for all the projects involved.&lt;/p&gt;</summary></entry><entry><title>XMPP in Google Summer of Code 2015</title><link href="/2015/03/xmpp-in-google-summer-of-code-2015" rel="alternate"></link><updated>2015-03-03T06:20:00+01:00</updated><author><name>kev</name></author><id>tag:,2015-03-03:2015/03/xmpp-in-google-summer-of-code-2015</id><summary type="html">&lt;p&gt;We've just had the great news that Google have again accepted the XSF to mentor XMPP-related projects in the Google Summer of Code this year. GSoC is a programme whereby Google pays students a stipend to work on open source projects for the summer, and when we're able to participate in this it's a highlight of the year for us. If you are, or know any, talented students with an interest in realtime communication systems we've got a selection of interesting projects at &lt;a href="http://wiki.xmpp.org/web/Summer_of_Code_2015"&gt;http://wiki.xmpp.org/web/Summer_of_Code_2015&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our page on the GSoC site is at &lt;a href="https://www.google-melange.com/gsoc/org2/google/gsoc2015/xmpp"&gt;https://www.google-melange.com/gsoc/org2/google/gsoc2015/xmpp&lt;/a&gt;, and for more information on GSoC in general please see the Google site at &lt;a href="https://www.google-melange.com/gsoc/homepage/google/gsoc2015"&gt;https://www.google-melange.com/gsoc/homepage/google/gsoc2015&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Student applications open on March 16th but that's no reason to delay - come and chat with us about our possible projects with the contact venues listed on &lt;a href="http://wiki.xmpp.org/web/Summer_of_Code_2015"&gt;http://wiki.xmpp.org/web/Summer_of_Code_2015&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We've got the ideas, we've got the mentors, all we need are a few students to turn this into a great summer for XMPP.&lt;/p&gt;</summary></entry><entry><title>Interop event report</title><link href="/2010/12/interop-event-report" rel="alternate"></link><updated>2010-12-14T11:22:00+01:00</updated><author><name>kev</name></author><id>tag:,2010-12-14:2010/12/interop-event-report</id><summary type="html">&lt;p&gt;From 6th-11th December 2010, the XSF ran its first remote interop event. All client and server projects were invited to attend, and we had a good turnout. The aim of the interop event was to test basic XMPP interoperability, particularly re correct TLS and certificate handling, for both clients and servers. We provided projects with a list of tests, together with a set of known-bad server configurations, and worked through these during the week. Several ancillary tests were also performed, which are listed after the scripted test results.&lt;/p&gt;
+&lt;p&gt;Server to server testing:&lt;/p&gt;
+&lt;p&gt;Five server projects provided test servers for the event:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.isode.com/products/m-link.html"&gt;Isode&lt;/a&gt; provided servers running M-Link's development trunk for the upcoming R15.0, and the current R14.6 release.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://prosody.im/"&gt;Prosody&lt;/a&gt; provided a sever running the trunk for their upcoming 0.8 release.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.process-one.net/"&gt;ProcessOne&lt;/a&gt; provided a server running the &lt;a href="http://www.ejabberd.im/"&gt;ejabberd&lt;/a&gt; 2.1.x branch.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.psyced.org/"&gt;psyced&lt;/a&gt; provided several configurations of their server to server support, covering different test cases.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tigase.org"&gt;Tigase&lt;/a&gt; supplied a server running the development trunk.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Initial tests occurred on Wednesday, with no requirements on TLS, SASL, or cert checking - only testing that the servers were able to interoperate by passing an 'iq' query stanza and receiving a reply (indicating two-way communication). All projects were demonstrated to interoperate at this level.&lt;/p&gt;
+&lt;p&gt;The scripted server tests for Thursday required that all server to server connections were encrypted with TLS, but not that the certificates were verified. M-Link's trunk, ejabberd, Prosody and psyced were able to demonstrate interoperability; M-Link's release didn't participate as it cannot be configured to require TLS, although the aforementioned servers interoperated with it; Tigase does not support TLS for server to server communication, so didn't participate.&lt;/p&gt;
+&lt;p&gt;The last server tests were conducted on Friday; these required servers to require all communication with other servers to occur over TLS, with full certificate trust and validity checking. M-Link's trunk, Prosody and psyced were able to demonstrate this through correct interoperability with the test servers and failed interoperability with provided servers with different mis-configurations covering: no TLS, expired certificates, revoked certificates, untrusted certificates and certificates not matching the service. ejabberd passed all tests except for the test of revocation list checking. M-Link R14.6 and Tigase did not participate.&lt;/p&gt;
+&lt;p&gt;Client results:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://swift.im"&gt;Swift&lt;/a&gt; was the only client to participate in the scripted tests, with the development trunk.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Swift was able to demonstrate interoperability with all servers (excluding psyced, which wasn't configured for client connections) with and without the servers requiring TLS. When testing against servers with invalid certificates, Swift correctly rejected the expired and untrusted certs, and the one for the wrong service. Swift did not support certificate revocation checks.&lt;/p&gt;
+&lt;p&gt;Other results:&lt;/p&gt;
+&lt;p&gt;In addition to the formal tests above, several projects performed additional testing, the highlights of which are below.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Gajim, OneTeam and N900 clients reported success with Jingle interoperability for voice calls with acceptable voice quality on standard connections. Connections over mobile (3G) connection with the N900 were less encouraging.&lt;/li&gt;
+&lt;li&gt;Interoperability was reported between the Telepathy framework and M-Link for the 'google:queue' extension for reducing battery cost for mobile clients. It is expected that standardization will follow.&lt;/li&gt;
+&lt;li&gt;Interoperability was demonstrated between Swift and M-Link over IPv6.&lt;/li&gt;
+&lt;li&gt;Servers were reported not to use or negotiate the SSLv2 protocol, complying to the requirements given in &lt;a href="http://tools.ietf.org/html/draft-ietf-tls-ssl2-must-not-03"&gt;draft-ietf-tls-ssl2-must-not&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;XEP-0198 support was demonstrated between Swift and M-Link, M-Link and Prosody, and Prosody and Swift, demonstrating the possibility of a more reliable XMPP network as this technology gets deployed.&lt;/li&gt;
+&lt;li&gt;M-Link and psyced demonstrated bi-directional server communication support, using XEP-0288.&lt;/li&gt;
+&lt;li&gt;Interoperability of SCRAM-SHA1-PLUS (channel binding) was demonstrated between Isode's implementation and the GNU SASL implementation, and Swift was able to connect to M-Link also using SCRAM-SHA1-PLUS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;From the XSF's point of view, the week was an outstanding success, demonstrating general stability of server to server communications between a number of projects, and all projects taking part in the scripted tests reported that they had found and corrected issues during the course of the week as a consequence of the testing, making it a valuable event for all involved.&lt;/p&gt;</summary></entry></feed>
